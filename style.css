@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prosto One', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.893);
+}
+
+section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section span {
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: rgba(71, 71, 71, 0.511);
+    transition: 1.5s;
+}
+
+section span:hover {
+    background-color: #0f0;
+    transition: .0s;
+}
+
+.login {
+    position: absolute;
+    width: 400px;
+    padding: 40px;
+    background: rgba(65, 64, 64, 0.895);
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 2px rgba(178, 180, 178, 0.66); */
+    transition: .5s;
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.content h2 {
+    color: #0f0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputBox {
+    background: rgba(9, 66, 235, 0.397);
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.inputBox input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+
+.inputBox i {
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    color: #aaa;
+    padding: 15px 10px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputBox input:focus {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.66);
+}
+
+.inputBox input:focus~i, .inputBox input:valid~i {
+    font-size: 0.7em;
+    transform: translateY(-8.5px);
+}
+
+.inputBox input[type=submit] {
+    background: #0f0;
+    color: #444;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    padding: 10px;
+}
+
+.inputBox input[type=submit]:hover {
+    opacity: .8;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #dff;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:nth-child(even) {
+    color: #0f0;
+}
